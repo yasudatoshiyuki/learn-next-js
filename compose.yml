@@ -4,3 +4,5 @@ services:
     command: bash -c "sleep 1000000"
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    volumes:
+      - .:/app
