@@ -1,7 +1,7 @@
 services:
   node:
     build: .
-    command: bash -c "cd nextjs-dashboard && npm run dev"
+    command: bash -c "cd nextjs-dashboard && npm install && npm run dev"
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
