@@ -1,8 +1,10 @@
 services:
   node:
     build: .
-    command: bash -c "sleep 1000000"
+    command: bash -c "cd nextjs-dashboard && npm run dev"
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    ports:
+      - 3000:3000
     volumes:
       - .:/app
